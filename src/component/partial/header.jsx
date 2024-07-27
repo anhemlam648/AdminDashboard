@@ -1,20 +1,70 @@
 // src/components/Header.jsx
 import React from 'react';
 import { Link } from 'react-router-dom'; // Để sử dụng các liên kết điều hướng
-import './header.css'; 
+
 const Header = () => {
+  const headerStyle = {
+    backgroundColor: '#333',
+    color: '#fff',
+    padding: '10px 20px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%', 
+    position: 'fixed', 
+    top: 0, 
+    left: 0,
+    zIndex: 1000,
+  };
+
+  const headerContentStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    width: '100%',
+    maxWidth: '1200px',
+    margin: '0 auto',
+    position: 'relative', 
+  };
+
+  const titleStyle = {
+    position: 'absolute',
+    left: '20px', 
+    bottom: '10px', 
+    fontSize: '24px',
+    margin: '0', 
+  };
+
+  const navbarStyle = {
+    display: 'flex',
+  };
+
+  const navbarListStyle = {
+    listStyle: 'none',
+    margin: 0,
+    padding: 0,
+    display: 'flex',
+  };
+
+  const navbarItemStyle = {
+    margin: '0 15px',
+  };
+
+  const navbarLinkStyle = {
+    color: '#fff',
+    textDecoration: 'none',
+    fontSize: '20px',
+  };
+
   return (
-    <header className="header">
-      <div className="header-content">
-        <div className="logo">
-          <h1 className='title'>AdminDashBoard</h1>
-        </div>
-        <nav className="navbar">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/dashboard">Dashboard</Link></li>
-            <li><Link to="/settings">Settings</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
+    <header style={headerStyle}>
+      <div style={headerContentStyle}>
+        <h1 style={titleStyle}>AdminDashBoard</h1>
+        <nav style={navbarStyle}>
+          <ul style={navbarListStyle}>
+            <li style={navbarItemStyle}><Link to="/" style={navbarLinkStyle}>Home</Link></li>
+            <li style={navbarItemStyle}><Link to="/dashboard" style={navbarLinkStyle}>Dashboard</Link></li>
+            <li style={navbarItemStyle}><Link to="/settings" style={navbarLinkStyle}>Settings</Link></li>
+            <li style={navbarItemStyle}><Link to="/profile" style={navbarLinkStyle}>Profile</Link></li>
           </ul>
         </nav>
       </div>
