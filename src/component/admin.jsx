@@ -1,30 +1,44 @@
-// src/components/AdminDashboard.jsx
 import React from 'react';
-import Header from './partial/header'; 
-import Footer from './partial/footer'; 
+import Header from './partial/header';
+import Footer from './partial/footer';
+import Sidebar from './partial/sidebar';
+import Card from './partial/card';
+import Chart from './partial/chart';
 
 function AdminDashboard() {
-    const contentStyle = {
-        textAlign: 'center',
-        margin: '20px 0',
-        fontSize: '32px',
-        color: '#333',
-        fontFamily: 'Arial, sans-serif',
-        marginLeft: '350px',
-      };
-    
-      const mainStyle = {
-        textAlign: 'center',
-        fontSize: '18px',
-        color: '#555',
-        fontFamily: 'Arial, sans-serif',
-        marginLeft: '450px',
-      };
+  const dashboardContainerStyle = {
+    display: 'flex',
+  };
+
+  const mainContentStyle = {
+    flex: 1,
+    padding: '20px',
+  };
+
+  const dashboardHeadingStyle = {
+    fontSize: '24px',
+    color: '#333',
+  };
+
+  const cardsContainerStyle = {
+    display: 'flex',
+    gap: '20px',
+    marginBottom: '20px',
+  };
+
   return (
-    <div>
+    <div style={dashboardContainerStyle}>
       <Header />
-      <h1 style={contentStyle}>Hello Welcome! Vu Trung Nghia</h1>
-      <p style={mainStyle}>Project: A modern React application setup with Vite. This template is designed to provide a fast and efficient development environment, featuring real-time updates and clean, maintainable code.</p>
+      <Sidebar />
+      <main style={mainContentStyle}>
+        <h1 style={dashboardHeadingStyle}>Dashboard</h1>
+        <div style={cardsContainerStyle}>
+          <Card title="Total Sales" value="$1,200" />
+          <Card title="New Users" value="345" />
+          <Card title="Orders" value="78" />
+        </div>
+        <Chart />
+      </main>
       <Footer />
     </div>
   );
