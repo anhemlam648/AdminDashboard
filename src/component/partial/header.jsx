@@ -27,7 +27,7 @@ const Header = () => {
 
   const titleStyle = {
     position: 'absolute',
-    left: '-25px', 
+    left: '-26px', 
     bottom:  ' 5px', 
     fontSize: '18px',
     margin: '0', 
@@ -53,7 +53,7 @@ const Header = () => {
   const navbarLinkStyle = {
     color: '#fff',
     textDecoration: 'none',
-    fontSize: '16px',
+    fontSize: '15px',
     marginRight: '100px',
   };
 

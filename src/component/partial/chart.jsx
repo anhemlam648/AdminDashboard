@@ -8,13 +8,16 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 const ChartContainer = styled.div`
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 20px;
+  border-radius: 15px;
+  padding: 15px;
+  width: 90%; 
+  height: 295px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const ChartTitle = styled.h3`
-  margin: 0 0 20px;
-  font-size: 20px;
+  margin: 0 0 15px;
+  font-size: 18px;
   color: #333;
 `;
 
@@ -26,21 +29,21 @@ const chartData = {
       data: [30, 45, 65, 55, 75, 90, 100],
       borderColor: '#4caf50',
       backgroundColor: 'rgba(76, 175, 80, 0.2)',
-      fill: true,      
+      fill: true,
     },
     {
-        label: 'Expenses',
-        data: [20, 35, 50, 40, 60, 70, 80],
-        borderColor: '#ff5722',
-        backgroundColor: 'rgba(255, 87, 34, 0.2)',
-        fill: true,
+      label: 'Expenses',
+      data: [20, 35, 50, 40, 60, 70, 80],
+      borderColor: '#ff5722',
+      backgroundColor: 'rgba(255, 87, 34, 0.2)',
+      fill: true,
     },
     {
-        label: 'Profit',
-        data: [10, 15, 25, 15, 15, 20, 30],
-        borderColor: '#2196f3',
-        backgroundColor: 'rgba(33, 150, 243, 0.2)',
-        fill: true,
+      label: 'Profit',
+      data: [10, 15, 25, 15, 15, 20, 30],
+      borderColor: '#2196f3',
+      backgroundColor: 'rgba(33, 150, 243, 0.2)',
+      fill: true,
     },
   ],
 };
