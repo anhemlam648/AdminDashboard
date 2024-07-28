@@ -1,4 +1,9 @@
+import React from 'react';
 import styled from 'styled-components';
+import { Line } from 'react-chartjs-2';
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+
+ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
 const ChartContainer = styled.div`
   background-color: #fff;
@@ -7,20 +12,46 @@ const ChartContainer = styled.div`
   padding: 20px;
 `;
 
-const ChartPlaceholder = styled.div`
-  height: 200px;
-  background-color: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
+const ChartTitle = styled.h3`
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #333;
 `;
+
+const chartData = {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [
+    {
+      label: 'Sales',
+      data: [30, 45, 65, 55, 75, 90, 100],
+      borderColor: '#4caf50',
+      backgroundColor: 'rgba(76, 175, 80, 0.2)',
+      fill: true,
+    },
+  ],
+};
+
+const chartOptions = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'top',
+    },
+    tooltip: {
+      callbacks: {
+        label: function (tooltipItem) {
+          return `${tooltipItem.dataset.label}: $${tooltipItem.raw}`;
+        },
+      },
+    },
+  },
+};
 
 function Chart() {
   return (
     <ChartContainer>
-      <h3>Sales Chart</h3>
-      <ChartPlaceholder>Chart will go here</ChartPlaceholder>
+      <ChartTitle>Sales Chart</ChartTitle>
+      <Line data={chartData} options={chartOptions} />
     </ChartContainer>
   );
 }

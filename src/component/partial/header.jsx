@@ -53,7 +53,7 @@ const Header = () => {
   const navbarLinkStyle = {
     color: '#fff',
     textDecoration: 'none',
-    fontSize: '25px',
+    fontSize: '20px',
     marginRight: '100px',
   };
 
