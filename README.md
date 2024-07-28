@@ -12,4 +12,7 @@ Welcome to the **React + Vite** starter template! 🚀
 ## 🛠️ Images
 
 - **DashBoard**
+
+<hr style="border: 1px solid #ddd; margin: 20px 0;" />
+
 ![Picture](./public/images/HomeAdmin.jpg)
