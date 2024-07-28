@@ -1,8 +1,8 @@
 import React from 'react';
 
 const footerStyle = {
-  marginTop: '30px',
-  backgroundColor: '#333',
+  marginTop: '55px',
+  backgroundColor: '#0099FF',
   color: '#fff',
   padding: '1px 1px', 
   display: 'flex',
@@ -17,7 +17,7 @@ const footerStyle = {
 };
 
 const footerContentStyle = {
-  marginBottom: '10px',
+  marginBottom: '-5px',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

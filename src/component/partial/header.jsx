@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Để sử dụng các liên kết �
 
 const Header = () => {
   const headerStyle = {
-    backgroundColor: '#333',
+    backgroundColor: '#0099FF',
     color: '#fff',
     padding: '10px 20px',
     display: 'flex',
@@ -56,19 +56,30 @@ const Header = () => {
     fontSize: '15px',
     marginRight: '100px',
   };
-
+  const buttonStyle = {
+    backgroundColor: '#4caf50', 
+    color: '#fff', 
+    border: 'none',
+    borderRadius: '5px',
+    padding: '5px 10px',
+    fontSize: '15px',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    marginLeft:'30px',
+  };
   return (
     <header style={headerStyle}>
       <div style={headerContentStyle}>
         <h1 style={titleStyle}>AdminDashBoard</h1>
         <nav style={navbarStyle}>
           <ul style={navbarListStyle}>
-            <li style={navbarItemStyle}><Link to="/" style={navbarLinkStyle}>Home</Link></li>
-            <li style={navbarItemStyle}><Link to="/dashboard" style={navbarLinkStyle}>Dashboard</Link></li>
-            <li style={navbarItemStyle}><Link to="/settings" style={navbarLinkStyle}>Settings</Link></li>
-            <li style={navbarItemStyle}><Link to="/profile" style={navbarLinkStyle}>Profile</Link></li>
+            <li style={navbarItemStyle}><Link to="#" style={navbarLinkStyle}>Home</Link></li>
+            <li style={navbarItemStyle}><Link to="#" style={navbarLinkStyle}>Dashboard</Link></li>
+            <li style={navbarItemStyle}><Link to="#" style={navbarLinkStyle}>Settings</Link></li>
+            <li style={navbarItemStyle}><Link to="#" style={navbarLinkStyle}>Profile</Link></li>
           </ul>
         </nav>
+        <Link to="#" style={buttonStyle}>Upgrade Pro</Link>
       </div>
     </header>
   );

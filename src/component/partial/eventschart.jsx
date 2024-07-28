@@ -39,7 +39,7 @@ const EventsChart = () => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+          <Line type="monotone" dataKey="uv" stroke="#00FF00" />
         </LineChart>
       </ResponsiveContainer>
     </ChartContainer1>

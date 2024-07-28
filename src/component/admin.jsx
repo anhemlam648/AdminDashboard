@@ -16,18 +16,18 @@ function AdminDashboard() {
   };
 
   const cardsContainerStyle = {
-    marginTop: '30px',
+    marginTop: '40px',
     display: 'flex',
     gap: '20px',
     marginBottom: '20px',
   };
 
   const headingStyle = {
-    marginTop: '30px',
+    marginTop: '40px',
     fontSize: '20px',
     fontWeight: 'bold',
     color: '#333',
-    marginBottom: '-5px',
+    marginBottom: '-15px',
     fontFamily: 'Arial, sans-serif',
   };
   const chartsContainerStyle = {

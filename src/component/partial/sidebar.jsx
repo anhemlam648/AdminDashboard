@@ -9,7 +9,7 @@ const Sidebar = () => {
   };
 
   const sidebarTitleStyle = {
-    marginTop:'25px',
+    marginTop:'35px',
     fontSize: '18px',
     marginBottom: '-5px',
   };
@@ -36,22 +36,22 @@ const Sidebar = () => {
       <h2 style={sidebarTitleStyle}>Dash Menu</h2>
       <ul style={sidebarListStyle}>
         <li style={sidebarItemStyle}>
-          <Link to="/#" style={sidebarItemTextStyle}>🖥️ Dashboard</Link>
+          <Link to="#" style={sidebarItemTextStyle}>🖥️ Dashboard</Link>
         </li>
         <li style={sidebarItemStyle}>
-          <Link to="/#" style={sidebarItemTextStyle}>🔲 UI Elements</Link>
+          <Link to="#" style={sidebarItemTextStyle}>🔲 UI Elements</Link>
         </li>
         <li style={sidebarItemStyle}>
-          <Link to="/#" style={sidebarItemTextStyle}>📈 Charts</Link>
+          <Link to="#" style={sidebarItemTextStyle}>📈 Charts</Link>
         </li>
         <li style={sidebarItemStyle}>
-          <Link to="/#" style={sidebarItemTextStyle}>🔧 Tools</Link>
+          <Link to="#" style={sidebarItemTextStyle}>🔧 Tools</Link>
         </li>
         <li style={sidebarItemStyle}>
-          <Link to="/#" style={sidebarItemTextStyle}>⚙️ Settings</Link>
+          <Link to="#" style={sidebarItemTextStyle}>⚙️ Settings</Link>
         </li>
         <li style={sidebarItemStyle}>
-          <Link to="/#" style={sidebarItemTextStyle}>📄 Documentation</Link>
+          <Link to="#" style={sidebarItemTextStyle}>📄 Documentation</Link>
         </li>
       </ul>
     </nav>
