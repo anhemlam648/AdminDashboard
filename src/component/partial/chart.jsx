@@ -26,7 +26,21 @@ const chartData = {
       data: [30, 45, 65, 55, 75, 90, 100],
       borderColor: '#4caf50',
       backgroundColor: 'rgba(76, 175, 80, 0.2)',
-      fill: true,
+      fill: true,      
+    },
+    {
+        label: 'Expenses',
+        data: [20, 35, 50, 40, 60, 70, 80],
+        borderColor: '#ff5722',
+        backgroundColor: 'rgba(255, 87, 34, 0.2)',
+        fill: true,
+    },
+    {
+        label: 'Profit',
+        data: [10, 15, 25, 15, 15, 20, 30],
+        borderColor: '#2196f3',
+        backgroundColor: 'rgba(33, 150, 243, 0.2)',
+        fill: true,
     },
   ],
 };
