@@ -5,7 +5,7 @@ const Header = () => {
   const headerStyle = {
     backgroundColor: '#333',
     color: '#fff',
-    padding: '20px 50px',
+    padding: '10px 20px',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -27,11 +27,11 @@ const Header = () => {
 
   const titleStyle = {
     position: 'absolute',
-    left: '20px', 
+    left: '-25px', 
     bottom:  ' 5px', 
-    fontSize: '24px',
+    fontSize: '18px',
     margin: '0', 
-    marginLeft: '-150px',
+    marginLeft: '-130px',
   };
 
   const navbarStyle = {
@@ -53,7 +53,7 @@ const Header = () => {
   const navbarLinkStyle = {
     color: '#fff',
     textDecoration: 'none',
-    fontSize: '20px',
+    fontSize: '16px',
     marginRight: '100px',
   };
 

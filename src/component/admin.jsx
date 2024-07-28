@@ -15,12 +15,8 @@ function AdminDashboard() {
     padding: '20px',
   };
 
-  const dashboardHeadingStyle = {
-    fontSize: '24px',
-    color: '#333',
-  };
-
   const cardsContainerStyle = {
+    marginTop: '30px',
     display: 'flex',
     gap: '20px',
     marginBottom: '20px',
@@ -31,11 +27,10 @@ function AdminDashboard() {
       <Header />
       <Sidebar />
       <main style={mainContentStyle}>
-        <h1 style={dashboardHeadingStyle}>Dashboard</h1>
         <div style={cardsContainerStyle}>
-          <Card title="Total Sales" value="$1,200" />
-          <Card title="New Users" value="345" />
-          <Card title="Orders" value="78" />
+          <Card title="Total Sales" value="$1,600" />
+          <Card title="New Users" value="350" />
+          <Card title="Orders" value="80" />
         </div>
         <Chart />
       </main>

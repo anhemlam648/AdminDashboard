@@ -16,6 +16,7 @@ const footerStyle = {
 };
 
 const footerContentStyle = {
+  marginBottom: '10px',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

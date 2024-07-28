@@ -8,10 +8,10 @@ function Sidebar() {
     height: '100vh',
   };
 
-  const sidebarTitleStyle = {
-    fontSize: '20px',
-    marginBottom: '20px',
-  };
+//   const sidebarTitleStyle = {
+//     fontSize: '20px',
+//     marginBottom: '20px',
+//   };
 
   const sidebarListStyle = {
     listStyleType: 'none',
@@ -26,7 +26,6 @@ function Sidebar() {
 
   return (
     <nav style={sidebarStyle}>
-      <h2 style={sidebarTitleStyle}>Admin Panel</h2>
       <ul style={sidebarListStyle}>
         <li style={sidebarItemStyle}>Dashboard</li>
         <li style={sidebarItemStyle}>Users</li>
