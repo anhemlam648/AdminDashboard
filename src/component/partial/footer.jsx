@@ -23,6 +23,7 @@ const footerContentStyle = {
 };
 
 const footerLinksStyle = {
+  marginTop: '-15px',
   listStyle: 'none',
   margin: 0,
   padding: 0,
