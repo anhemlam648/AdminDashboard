@@ -9,3 +9,7 @@ Welcome to the **React + Vite** starter template! 🚀
 - **Hot Module Replacement (HMR)**: Instant updates during development.
 - **ESLint**: Code linting for maintaining code quality.
 
+## 🛠️ Images
+
+- **DashBoard**
+![Picture](./public/images/HomeAdmin.jpg)
